@@ -30,5 +30,29 @@ internal class Program
 
 
         #endregion
+
+        #region Question02
+        //2. Get a list of only the product names from ProductList. Print each name.
+
+        var productnames = ProductList.Select(p =>  p.ProductName );
+
+        foreach(var i in productnames)
+        {
+
+            Console.WriteLine(i);
+
+        }
+
+
+
+
+        productnames = from p in ProductList
+                       select p.ProductName;
+
+
+
+
+        #endregion
+
     }
 }
