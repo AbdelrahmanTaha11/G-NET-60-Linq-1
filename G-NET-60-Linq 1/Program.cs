@@ -2,6 +2,7 @@
 using G_NET_60_Linq_1;
 using static G_NET_60_Linq_1.Source;
 
+
 internal class Program
 {
     static void Main(string[] args)
@@ -194,9 +195,33 @@ internal class Program
         //foreach(var i in reault)
         //{
         //    Console.WriteLine(i);
-         
+
 
         //}
+
+        #endregion
+
+        #region Question10
+
+        /*10. Using QUERY SYNTAX with a compound from clause, list
+            all orders placed in 1997 or later showing CustomerID and
+            OrderDate.*/
+
+
+        //var result = from c in CustomerList
+        //             from o in c.Orders
+        //             where o.OrderDate >= new DateTime(1997, 1, 1)
+        //             select new
+        //             {
+        //                 c.CustomerID,
+        //                 o.OrderDate
+        //             };
+        //foreach (var order in result)
+        //{
+        //    Console.WriteLine(order);
+
+        //}
+
 
         #endregion
 
