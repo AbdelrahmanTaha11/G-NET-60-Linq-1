@@ -115,19 +115,19 @@ internal class Program
 
         //Get all products that are in stock (UnitsInStock > 0) and belong to the "Condiments" category.
 
-       // var ProductInStock = ProductList.Where(p => p.UnitsInStock > 1 && p.Category == "Condiments");
+        // var ProductInStock = ProductList.Where(p => p.UnitsInStock > 1 && p.Category == "Condiments");
 
 
-       //ProductInStock = from p in ProductList
-       //                  where p.UnitPrice > 1
-       //                  where p.Category == "Condiments"
-       //                  select p;
+        //ProductInStock = from p in ProductList
+        //                  where p.UnitPrice > 1
+        //                  where p.Category == "Condiments"
+        //                  select p;
 
-       // foreach(var i in ProductInStock)
-       // {
-       //     Console.WriteLine(i);
+        // foreach(var i in ProductInStock)
+        // {
+        //     Console.WriteLine(i);
 
-       // }
+        // }
 
         #endregion
 
@@ -156,6 +156,16 @@ internal class Program
 
 
 
+        #endregion
+
+        #region Question07
+        //7. Print each product's name along with its position (1-based) in the list. Expected format: 1.Chai, 2.Chang, etc.
+
+        //var result = ProductList.Select((p, index) => new { Position = index + 1, Name = p.ProductName });
+
+        //foreach (var item in result) {
+        //    Console.WriteLine($"{item.Position}.{item.Name}");
+        //}
         #endregion
 
 
