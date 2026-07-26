@@ -115,19 +115,46 @@ internal class Program
 
         //Get all products that are in stock (UnitsInStock > 0) and belong to the "Condiments" category.
 
-        var ProductInStock = ProductList.Where(p => p.UnitsInStock > 1 && p.Category == "Condiments");
+       // var ProductInStock = ProductList.Where(p => p.UnitsInStock > 1 && p.Category == "Condiments");
 
 
-       ProductInStock = from p in ProductList
-                         where p.UnitPrice > 1
-                         where p.Category == "Condiments"
-                         select p;
+       //ProductInStock = from p in ProductList
+       //                  where p.UnitPrice > 1
+       //                  where p.Category == "Condiments"
+       //                  select p;
 
-        foreach(var i in ProductInStock)
-        {
-            Console.WriteLine(i);
+       // foreach(var i in ProductInStock)
+       // {
+       //     Console.WriteLine(i);
 
-        }
+       // }
+
+        #endregion
+
+        #region Question06
+
+        /*
+         * 6. Create a new anonymous type with three properties:
+        ● Name → the product name
+        ● Price → the unit price
+        ● StockStatus → a string: "Available" if UnitsInStock > 0,
+        otherwise "Out of Stock"
+        ● Print the result.
+         
+         */
+
+        //var result = ProductList.Select(p => new {Name= p.ProductName , Price = p.UnitPrice,
+        //                                            StockStatus= p.UnitsInStock > 0 ? "Available" : "Out of Stock" });
+
+        //foreach (var item in result)
+        //{
+        //    Console.WriteLine(item);
+        //}
+
+
+
+
+
 
         #endregion
 
