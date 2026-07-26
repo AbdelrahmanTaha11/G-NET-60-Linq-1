@@ -227,23 +227,45 @@ internal class Program
 
         #region Question11
         //11. Show position number alongside ProductName
-        var productsWithPosition = ProductList
-    .Select((p, index) => new
-    {
-        Position = index + 1,
-        p.ProductName
-    });
+        //    var productsWithPosition = ProductList
+        //.Select((p, index) => new
+        //{
+        //    Position = index + 1,
+        //    p.ProductName
+        //});
 
-        foreach (var product in productsWithPosition)
-        {
-            Console.WriteLine($"{product.Position}. {product.ProductName}");
-        }
+        //    foreach (var product in productsWithPosition)
+        //    {
+        //        Console.WriteLine($"{product.Position}. {product.ProductName}");
+        //    }
 
 
 
 
 
         #endregion
+
+        #region Question12
+
+
+        //12. Sort first by-word length and then by a case -insensitive sort of the words in an array.
+
+        //   String[] Arr = { "aPPLE", "AbAcUs", "bRaNcH", "BlUeBeRrY", "ClOvEr", "cHeRry" };
+
+        //   var sortedWords = Arr
+        //.OrderBy(word => word.Length)
+        //.ThenBy(word => word, StringComparer.OrdinalIgnoreCase);
+
+        //   foreach (var word in sortedWords)
+        //   {
+        //       Console.WriteLine(word);
+        //   }
+
+
+
+        #endregion
+
+      
 
 
 
