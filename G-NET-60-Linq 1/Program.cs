@@ -34,25 +34,56 @@ internal class Program
         #region Question02
         //2. Get a list of only the product names from ProductList. Print each name.
 
-        var productnames = ProductList.Select(p =>  p.ProductName );
+        //var productnames = ProductList.Select(p =>  p.ProductName );
 
-        foreach(var i in productnames)
-        {
+        //foreach(var i in productnames)
+        //{
 
-            Console.WriteLine(i);
+        //    Console.WriteLine(i);
 
-        }
-
-
+        //}
 
 
-        productnames = from p in ProductList
-                       select p.ProductName;
+
+
+        //productnames = from p in ProductList
+        //               select p.ProductName;
 
 
 
 
         #endregion
+
+        #region Question03
+
+        //Sort all products by UnitPrice (ascending). Print each product's name and price.
+
+        //var Sortproducts = ProductList.OrderBy(P => P.UnitPrice).Select(p => new { p.ProductName, p.UnitPrice });
+
+        //foreach(var i in Sortproducts)
+        //{
+
+        //    Console.WriteLine(i);
+
+
+        //}
+
+
+        //Sortproducts = from p in ProductList
+        //               orderby p.UnitPrice
+        //               select new
+        //               {
+        //                   p.ProductName,
+        //                   p.UnitPrice
+        //               };
+
+
+
+
+        #endregion
+
+
+
 
     }
 }
