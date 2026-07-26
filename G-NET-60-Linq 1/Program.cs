@@ -168,6 +168,21 @@ internal class Program
         //}
         #endregion
 
+        #region Question08
+        //8. Sort ProductList by Category ascending, then within each   category, sort by UnitPrice descending.
+
+        //var result = ProductList.OrderBy(p => p.Category).ThenByDescending(p => p.UnitPrice);
+        
+        //foreach(var i in result)
+        //{
+
+        //    Console.WriteLine($"{i.Category} , {i.UnitPrice}");
+
+        //}
+
+
+        #endregion
+
 
 
 
