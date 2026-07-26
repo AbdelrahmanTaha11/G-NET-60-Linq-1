@@ -225,6 +225,25 @@ internal class Program
 
         #endregion
 
+        #region Question11
+        //11. Show position number alongside ProductName
+        var productsWithPosition = ProductList
+    .Select((p, index) => new
+    {
+        Position = index + 1,
+        p.ProductName
+    });
+
+        foreach (var product in productsWithPosition)
+        {
+            Console.WriteLine($"{product.Position}. {product.ProductName}");
+        }
+
+
+
+
+
+        #endregion
 
 
 
