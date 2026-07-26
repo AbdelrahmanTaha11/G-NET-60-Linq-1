@@ -172,7 +172,7 @@ internal class Program
         //8. Sort ProductList by Category ascending, then within each   category, sort by UnitPrice descending.
 
         //var result = ProductList.OrderBy(p => p.Category).ThenByDescending(p => p.UnitPrice);
-        
+
         //foreach(var i in result)
         //{
 
@@ -180,6 +180,23 @@ internal class Program
 
         //}
 
+
+        #endregion
+
+        #region Question09
+
+        //9. Get all products from the "Beverages" category, sorted by UnitsInStock descending. Print name and stock.
+
+
+        //var reault = ProductList.Where(p => p.Category == "Beverages").OrderByDescending(p => p.UnitsInStock > 1).
+        //                                                               Select(p => new { name = p.ProductName, Stock = p.UnitsInStock > 1 });
+
+        //foreach(var i in reault)
+        //{
+        //    Console.WriteLine(i);
+         
+
+        //}
 
         #endregion
 
