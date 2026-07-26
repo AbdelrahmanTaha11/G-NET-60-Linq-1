@@ -82,6 +82,35 @@ internal class Program
 
         #endregion
 
+        #region Question04
+        //Get all products where UnitPrice is between 10 and 30
+
+        //var Products = ProductList.Where(p => p.UnitPrice >= 10 && p.UnitPrice <= 30).OrderBy(p=> p.UnitPrice);
+
+
+        //foreach(var i in Products)
+        //{
+        //    Console.WriteLine(i.UnitPrice);
+
+
+        //}
+
+
+        //var products = from p in ProductList
+
+        // where p.UnitPrice >= 10 && p.UnitPrice <= 30
+        // select p;
+
+        //foreach (var product in products)
+        //{
+        //    Console.WriteLine($"Name: {product.ProductName}, Price: {product.UnitPrice}");
+        //}
+
+
+
+
+        #endregion
+
 
 
 
