@@ -111,6 +111,26 @@ internal class Program
 
         #endregion
 
+        #region Question05
+
+        //Get all products that are in stock (UnitsInStock > 0) and belong to the "Condiments" category.
+
+        var ProductInStock = ProductList.Where(p => p.UnitsInStock > 1 && p.Category == "Condiments");
+
+
+       ProductInStock = from p in ProductList
+                         where p.UnitPrice > 1
+                         where p.Category == "Condiments"
+                         select p;
+
+        foreach(var i in ProductInStock)
+        {
+            Console.WriteLine(i);
+
+        }
+
+        #endregion
+
 
 
 
