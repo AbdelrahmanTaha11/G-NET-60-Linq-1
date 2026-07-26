@@ -265,7 +265,24 @@ internal class Program
 
         #endregion
 
-      
+        #region Question13
+
+
+    //    var Numbers = new List<string> { "five", "six", "eight", "nine" };
+
+    //    var result = Numbers
+    //.Where(word => word.Length > 1 && word[1].ToString().ToLower() == "i")
+    //.Reverse();
+
+    //    foreach (var word in result)
+    //    {
+    //        Console.WriteLine(word);
+    //    }
+
+
+        #endregion
+
+
 
 
 
